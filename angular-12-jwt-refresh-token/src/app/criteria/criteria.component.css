@@ -1,0 +1,64 @@
+@import url("../app.component.css");
+
+:host::ng-deep .content-body {
+    .criteria-a {
+        a {
+            font-weight: 500;
+            color: white;
+        }
+    }
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+/* #region table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+tr.parent {
+    background-color: #e6f7ff;
+    font-weight: bold;
+}
+
+tr.child {
+    background-color: #ffffff;
+    padding-left: 20px;
+}
+
+tr.child td {
+    padding-left: 16px;
+}
+
+tr.child:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Add border-right to all cells except the last one in each row */
+td:not(:last-child), th:not(:last-child) {
+    border-right: 1px solid #ddd;
+}
+
+/* Ensure parent rows have colspan of 4 to span across all columns */
+tr.parent td {
+    padding-left: 16px;
+    /* border-right: none; Remove right border for merged cell */
+}
+
+/* endregion */

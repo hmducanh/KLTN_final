@@ -1,0 +1,47 @@
+.active-module {
+    .nav-link {
+        font-weight: 600;
+        color: white;
+    }
+}
+
+.page {
+    padding: 32px;
+}
+
+.kltn-flex {
+    display: flex;
+}
+
+.kltn-flex-row {
+    flex-direction: row;
+}
+
+.kltn-flex-column {
+    flex-direction: column;
+}
+
+.kltn-justify-content-between {
+    justify-content: space-between;
+}
+
+.kltn-align-items-center {
+    align-items: center;
+}
+
+.cell {
+    border-left: 1px solid;
+    justify-content: center;
+}
+
+mat-table {
+    border: 1px solid;
+}
+
+.mat-column-select {
+    flex: 0 0 64px;
+}
+
+.mat-column-ID {
+    flex: 0 0 100px;
+  }

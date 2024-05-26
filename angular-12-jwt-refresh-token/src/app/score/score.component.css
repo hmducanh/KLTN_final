@@ -1,0 +1,44 @@
+.score {
+    background-color: #eff8ff;
+    height: calc(100vh - 56px);
+    padding: 16px;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.title-2 {
+    font-size: 22px;
+    font-weight: 5  00;
+    margin-bottom: 16px;
+    color: #0b0b0c;
+}
+
+.schools {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+.block-school {
+    background: #fff;
+    padding: 16px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.16);
+}
+
+.block-school:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.view {
+    display: flex;
+    gap: 16px;
+}

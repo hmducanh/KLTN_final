@@ -1,0 +1,53 @@
+<div class="page">
+    <div class="kltn-flex kltn-flex-row kltn-justify-content-between kltn-align-items-center">
+        <div class="title">Cơ sở giáo dục</div>
+        <button mat-raised-button color="primary" (click)="vewCSGD()" class="btn-add">
+            Xem điểm
+          </button>
+    </div>
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 table-university">
+    
+        <!--- Note that these columns can be defined in any order.
+              The actual rendered columns are set as a property on the row definition" -->
+      
+      <!-- Checkbox Column -->
+      <ng-container matColumnDef="select">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let row">
+          <mat-checkbox
+            (click)="$event.stopPropagation()"
+            (change)="$event ? toggleSelection(row) : null"
+            [checked]="selection.isSelected(row)"
+            [disabled]="selectedRow !== null && !selection.isSelected(row)">
+          </mat-checkbox>
+        </td>
+      </ng-container>
+      
+        <!-- Position Column -->
+        <ng-container matColumnDef="position">
+          <th mat-header-cell *matHeaderCellDef> STT </th>
+          <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+        </ng-container>
+      
+        <!-- Name Column -->
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef> Tên trường </th>
+          <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+      
+        <!-- Weight Column -->
+        <ng-container matColumnDef="code">
+          <th mat-header-cell *matHeaderCellDef> Mã trường </th>
+          <td mat-cell *matCellDef="let element"> {{element.code}} </td>
+        </ng-container>
+
+        <!-- Weight Column -->
+        <ng-container matColumnDef="address">
+          <th mat-header-cell *matHeaderCellDef> Địa Chỉ </th>
+          <td mat-cell *matCellDef="let element"> {{element.address}} </td>
+        </ng-container>
+      
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+</div>

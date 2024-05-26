@@ -1,0 +1,38 @@
+<div class="kltn-flex kltn-flex-column score-dialog">
+    <div class="kltn-flex kltn-flex-row kltn-justify-content-between">
+        <div class="title">Chấm điểm cho {{data.name}}</div>
+        <div>
+            <button mat-raised-button color="warn" (click)="close()" style="margin-right: 16px;">
+                Hủy
+              </button>
+            <button mat-raised-button color="primary" (click)="saveScore()">
+                Lưu
+            </button>
+        </div>
+    </div>
+    <div class="table-container">
+        <table class="table-CSGD">
+            <thead>
+                <tr>
+                    <th style="width: 16%;">Tiêu chuẩn/Tiêu chí</th>
+                    <th style="width: 16%;">Yêu cầu của tiêu chí</th>
+                    <th style="width: 35%;">Mốc chuẩn tham chiếu để đánh giá tiêu chí đạt mức 4</th>
+                    <th style="width: 30%;">Gợi ý nguồn minh chứng</th>
+                    <th >Chấm điểm</th>
+                </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of data_CSGD; let i = index" [ngClass]="{'parent': item.isParent, 'child': !item.isParent}" >
+                <td colspan="5" *ngIf="item.isParent">{{ item.data }}</td>
+                <td *ngIf="!item.isParent">{{ item.criteria }}</td>
+                <td *ngIf="!item.isParent">{{ item.requirement }}</td>
+                <td *ngIf="!item.isParent">{{ item.benchmark }}</td>
+                <td *ngIf="!item.isParent">{{ item.evidence }}</td>
+                <td *ngIf="!item.isParent">
+                    <input id="myTextbox" type="text" [(ngModel)]="dataScore[i]" />  
+                </td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

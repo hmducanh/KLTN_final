@@ -1,0 +1,25 @@
+.custom-button {
+    margin-left: 16px;
+    margin-top: 16px;
+}
+
+.error-valid {
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+}
+
+.row {
+    margin-right: 0px !important;
+}
+
+.title {
+    margin: 16px;
+    font-weight: 500;
+    margin: 16px;
+    font-size: x-large;
+}
+
+.col-8 {
+    margin-top: 8px;
+}

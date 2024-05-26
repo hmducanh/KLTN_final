@@ -1,0 +1,37 @@
+<div id="app">
+  <nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="isLoggedIn">
+    <!-- <a href="#" class="navbar-brand">bezKoder</a> -->
+    <img src="../assets/Images/logo-trung-tam-nghien-cuu-quoc-hoc.jpg" height="40" width="40">
+    <ul class="navbar-nav mr-auto" routerLinkActive="active" style="margin-left: 8px;">
+      <li class="nav-item criteria-a">
+        <a href="/criteria" class="nav-link" routerLink="criteria">Bảng tiêu chí </a>
+      </li>
+      <li class="nav-item school-a" *ngIf="showAdminBoard">
+        <a href="/school" class="nav-link" routerLink="school">Cơ sở giáo dục</a>
+      </li>
+      <li class="nav-item score-a">
+        <a href="/score" class="nav-link" *ngIf="isLoggedIn" routerLink="score">Chấm điểm</a>
+      </li>
+      <li class="nav-item user-a">
+        <a href="/user" class="nav-link" *ngIf="isLoggedIn" routerLink="user">Người dùng</a>
+      </li>
+      <li class="nav-item add-user-a">
+        <a href="/add-user" class="nav-link" *ngIf="isLoggedIn" routerLink="add-user">Thêm người dùng</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a href="/profile" class="nav-link" routerLink="profile">{{ username }}</a>
+      </li>
+      <li class="nav-item">
+        <a href class="nav-link" (click)="logout()">Đăng xuất</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container-child">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+<ng-toast></ng-toast>

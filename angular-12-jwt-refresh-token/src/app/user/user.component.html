@@ -1,0 +1,50 @@
+<div class="row" *ngIf="!isView">
+    <div class="col">
+        <h4 class="title">Thông tin người dùng</h4>
+        <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+            <div class="col-8">
+                <label for="Name" class="form-label">Họ và tên</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" formControlName="name" [(ngModel)]="name">
+                <span class="form-text error-valid" *ngIf="f['name'].errors && f['name'].errors['required'] && afterSubmit">Họ và tên không được bỏ trống</span>
+            </div>
+            <div class="col-8">
+                <label for="Age" class="form-label">Tuổi</label>
+                <input type="number" class="form-control" id="age" aria-describedby="age" formControlName="age" [(ngModel)]="age">
+            </div>
+            <div class="col-8">
+                <label for="Email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" formControlName="email" [(ngModel)]="email">
+                <span class="form-text error-valid" *ngIf="f['email'].errors && f['email'].errors['required'] && afterSubmit">Email không được bỏ trống</span>
+                <span class="form-text error-valid" *ngIf="f['email'].touched && f['email'].invalid && afterSubmit">Email ko hợp lệ</span>
+            </div>
+            <div class="col-8">
+                <label for="Address" class="form-label">Địa chỉ</label>
+                <input type="text" class="form-control" id="address" aria-describedby="address" formControlName="address" [(ngModel)]="address">
+            </div>
+            <button type="submit" class="btn btn-success custom-button">Lưu</button>
+        </form>
+    </div>
+</div>
+
+<div class="row" *ngIf="isView">
+    <div class="col">
+        <h4 class="title">Thông tin người dùng</h4>
+        <div class="col-8">
+            Họ và tên: {{name}}
+        </div>
+        <div class="col-8">
+            Tuổi: {{age}}
+        </div>
+        <div class="col-8">
+            Email: {{email}}
+        </div>
+        <div class="col-8">
+            Địa chỉ: {{address}}
+        </div>
+        <div class="col-8">
+            Quyền: {{role}}
+        </div>
+        <button type="button" class="btn btn-primary custom-button" (click)="changView(false)">Sửa</button>
+        <button type="button" class="btn btn-primary custom-button" (click)="changePassword()">Đổi mật khẩu</button>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<div class="kltn-flex kltn-flex-column score">
+    <div class="kltn-flex kltn-flex-row kltn-justify-content-between">
+        <div class="title">
+            Phầm chấm điểm dành cho chuyên gia
+        </div>
+    </div>
+    <div class="kltn-flex kltn-flex-column">
+        <div class="title-2">Chấm điểm cho Cơ sở giáo dục</div>
+        <div class="schools">
+            <div class="block-school" *ngFor="let school of schools" (click)="openPopupScore(school)">
+                <div class="name">Tên trường: {{ school.name }}</div>
+                <div class="code">Mã trường: {{ school.code }}</div>
+                <div class="view">
+                    <img src="../assets/Images/ic-result.png" alt="chấm điểm" width="24" height="24">
+                    <div class="view-number">{{ school.view }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

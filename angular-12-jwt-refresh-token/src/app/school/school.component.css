@@ -1,0 +1,27 @@
+@import url("../app.component.css");
+
+table {
+    width: 100%;
+}
+
+.school-container {
+    padding: 60px;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.btn-add {
+    height: fit-content;
+}
+
+.table-university {
+    margin-top: 16px;
+}
+
+.mat-row.selected {
+    background-color: #d3d3d3;
+  }
