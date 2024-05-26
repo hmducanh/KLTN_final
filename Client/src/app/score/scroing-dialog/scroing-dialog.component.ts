@@ -2,6 +2,7 @@ import { Component, Inject, OnInit } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { DataService } from '../../_services/data.service';
 import { ScoreService } from '../../_services/score.service';
+import { NgToastService } from 'ng-angular-popup';
 
 @Component({
   selector: 'app-scroing-dialog',
@@ -14,7 +15,8 @@ export class ScroingDialogComponent implements OnInit {
     public dialogRef: MatDialogRef<ScroingDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any,
     public dataService: DataService,
-    public scoreService: ScoreService
+    public scoreService: ScoreService,
+    public toastService: NgToastService
   ) { }
 
   data_CTDT : any;
@@ -40,6 +42,11 @@ export class ScroingDialogComponent implements OnInit {
     const me = this;
     this.scoreService.saveScore(this.data["id"], 0, this.dataScore.toString()).subscribe(res => {
       me.dialogRef.close();
+      this.toastService.success({
+        detail: "Success !",
+        summary: "Bạn đã chấm điểm thành công",
+        duration: 5000
+      });
     })
   }
 

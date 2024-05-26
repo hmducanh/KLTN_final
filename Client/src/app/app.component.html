@@ -15,7 +15,7 @@
       <li class="nav-item user-a">
         <a href="/user" class="nav-link" *ngIf="isLoggedIn" routerLink="user">Người dùng</a>
       </li>
-      <li class="nav-item add-user-a">
+      <li class="nav-item add-user-a" *ngIf="role != 2">
         <a href="/add-user" class="nav-link" *ngIf="isLoggedIn" routerLink="add-user">Thêm người dùng</a>
       </li>
     </ul>

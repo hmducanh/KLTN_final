@@ -16,6 +16,7 @@ export class AppComponent implements OnInit, OnDestroy {
   showModeratorBoard = false;
   username?: string;
   title = "Hdanh1";
+  role: any;
 
   data_CTDT = [
     {
@@ -439,8 +440,9 @@ export class AppComponent implements OnInit, OnDestroy {
 
     if (this.isLoggedIn) {
       const user = this.tokenStorageService.getUser();
+      this.role = this.tokenStorageService.getRoleUser();
       this.roles = user.roles;
-
+      console.log(this.roles);
       this.showAdminBoard = true;
       this.showModeratorBoard = false;
 
