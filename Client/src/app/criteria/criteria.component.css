@@ -18,7 +18,7 @@
 /* #region table */
 
 .table-container {
-    max-height: 694px; /* Điều chỉnh chiều cao theo nhu cầu */
+    max-height: 766px; /* Điều chỉnh chiều cao theo nhu cầu */
     overflow-y: auto; /* Cho phép cuộn dọc */
     border: 1px solid #ddd; /* Thêm viền cho khung chứa */
 }
