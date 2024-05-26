@@ -12,18 +12,39 @@
             </button>
         </div>
     </div>
+  <div class="table-container">
     <!-- Tiêu chí chương trình đào tạo -->
     <table class="table-CTDT">
-      <thead>
-          <tr>
-              <th style="width: 16%;">Tiêu chuẩn/Tiêu chí</th>
-              <th style="width: 16%;">Yêu cầu của tiêu chí</th>
-              <th style="width: 35%;">Mốc chuẩn tham chiếu để đánh giá tiêu chí đạt mức 4</th>
-              <th>Gợi ý nguồn minh chứng</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr *ngFor="let item of data_CTDT" [ngClass]="{'parent': item.isParent, 'child': !item.isParent}" >
+        <thead>
+            <tr>
+                <th style="width: 16%;">Tiêu chuẩn/Tiêu chí</th>
+                <th style="width: 16%;">Yêu cầu của tiêu chí</th>
+                <th style="width: 35%;">Mốc chuẩn tham chiếu để đánh giá tiêu chí đạt mức 4</th>
+                <th>Gợi ý nguồn minh chứng</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of data_CTDT" [ngClass]="{'parent': item.isParent, 'child': !item.isParent}" >
+              <td colspan="4" *ngIf="item.isParent">{{ item.data }}</td>
+              <td *ngIf="!item.isParent">{{ item.criteria }}</td>
+              <td *ngIf="!item.isParent">{{ item.requirement }}</td>
+              <td *ngIf="!item.isParent">{{ item.benchmark }}</td>
+              <td *ngIf="!item.isParent">{{ item.evidence }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Tiêu chí cơ sở giáo dục -->
+    <table class="table-CSGD">
+        <thead>
+            <tr>
+                <th style="width: 16%;">Tiêu chuẩn/Tiêu chí</th>
+                <th style="width: 16%;">Yêu cầu của tiêu chí</th>
+                <th style="width: 35%;">Mốc chuẩn tham chiếu để đánh giá tiêu chí đạt mức 4</th>
+                <th>Gợi ý nguồn minh chứng</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of data_CSGD" [ngClass]="{'parent': item.isParent, 'child': !item.isParent}" >
             <td colspan="4" *ngIf="item.isParent">{{ item.data }}</td>
             <td *ngIf="!item.isParent">{{ item.criteria }}</td>
             <td *ngIf="!item.isParent">{{ item.requirement }}</td>
@@ -31,27 +52,8 @@
             <td *ngIf="!item.isParent">{{ item.evidence }}</td>
           </tr>
       </tbody>
-  </table>
-  <!-- Tiêu chí cơ sở giáo dục -->
-  <table class="table-CSGD">
-    <thead>
-        <tr>
-            <th style="width: 16%;">Tiêu chuẩn/Tiêu chí</th>
-            <th style="width: 16%;">Yêu cầu của tiêu chí</th>
-            <th style="width: 35%;">Mốc chuẩn tham chiếu để đánh giá tiêu chí đạt mức 4</th>
-            <th>Gợi ý nguồn minh chứng</th>
-        </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let item of data_CSGD" [ngClass]="{'parent': item.isParent, 'child': !item.isParent}" >
-        <td colspan="4" *ngIf="item.isParent">{{ item.data }}</td>
-        <td *ngIf="!item.isParent">{{ item.criteria }}</td>
-        <td *ngIf="!item.isParent">{{ item.requirement }}</td>
-        <td *ngIf="!item.isParent">{{ item.benchmark }}</td>
-        <td *ngIf="!item.isParent">{{ item.evidence }}</td>
-      </tr>
-  </tbody>
-    <tbody>
-    </tbody>
-</table>
+        <tbody>
+        </tbody>
+    </table>
+  </div>
 </div>

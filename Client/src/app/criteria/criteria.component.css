@@ -17,10 +17,23 @@
 
 /* #region table */
 
+.table-container {
+    max-height: 694px; /* Điều chỉnh chiều cao theo nhu cầu */
+    overflow-y: auto; /* Cho phép cuộn dọc */
+    border: 1px solid #ddd; /* Thêm viền cho khung chứa */
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
+    border-top: none;
 }
+
+thead {
+    position: sticky;
+    top: -2px;
+    z-index: 2; /* Đảm bảo tiêu đề nằm trên các hàng dữ liệu */
+  }
 
 th, td {
     padding: 8px;
@@ -59,6 +72,10 @@ td:not(:last-child), th:not(:last-child) {
 tr.parent td {
     padding-left: 16px;
     /* border-right: none; Remove right border for merged cell */
+}
+
+.point {
+    text-align: center;
 }
 
 /* endregion */
