@@ -19,7 +19,7 @@ namespace DL
                 try
                 {
                     MySqlCommand comm = con.CreateCommand();
-                    comm.CommandText = "UPDATE employee SET Result = @score WHERE EmployeeID = @employeeID AND EducationalFacilityID = @educationalFacilityID AND CriterionMappingID = @criterionMappingID";
+                    comm.CommandText = "UPDATE score SET Result = @score WHERE EmployeeID = @employeeID AND EducationalFacilityID = @educationalFacilityID AND CriterionMappingID = @criterionMappingID";
                     comm.Parameters.AddWithValue("@score", score);
                     comm.Parameters.AddWithValue("@employeeID", employeeID);
                     comm.Parameters.AddWithValue("@educationalFacilityID", educationalFacilityID);

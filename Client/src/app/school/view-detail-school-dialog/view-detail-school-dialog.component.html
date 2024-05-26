@@ -11,11 +11,11 @@
         <table class="table-CSGD">
             <thead>
                 <tr>
-                    <th style="width: 16%;">Tiêu chuẩn/Tiêu chí</th>
-                    <th style="width: 16%;">Yêu cầu của tiêu chí</th>
-                    <th style="width: 35%;">Mốc chuẩn tham chiếu để đánh giá tiêu chí đạt mức 4</th>
-                    <th style="width: 30%;">Gợi ý nguồn minh chứng</th>
-                    <th *ngFor="let item of schoolResut"> {{item.fullName}} </th>
+                    <th style="min-width: 166px;">Tiêu chuẩn/Tiêu chí</th>
+                    <th style="min-width: 250px;">Yêu cầu của tiêu chí</th>
+                    <th style="min-width: 450px;">Mốc chuẩn tham chiếu để đánh giá tiêu chí đạt mức 4</th>
+                    <th style="min-width: 300px;">Gợi ý nguồn minh chứng</th>
+                    <th *ngFor="let item of schoolResut" style="min-width: 120px;"> {{item.fullName}} </th>
                 </tr>
             </thead>
             <tbody>
@@ -26,7 +26,7 @@
                 <td *ngIf="!item.isParent">{{ item.benchmark }}</td>
                 <td *ngIf="!item.isParent">{{ item.evidence }}</td>
                 <td *ngFor="let result of item.listResult;">
-                    <div *ngIf="!item.isParent">
+                    <div *ngIf="!item.isParent" class="point">
                         {{ result }}
                     </div>
                 </td>

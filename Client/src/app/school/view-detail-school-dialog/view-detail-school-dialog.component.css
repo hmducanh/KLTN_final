@@ -68,9 +68,8 @@ tr.parent td {
     /* border-right: none; Remove right border for merged cell */
 }
 
-/* endregion */
-
-#myTextbox {
-    width: 84px;
+.point {
     text-align: center;
 }
+
+/* endregion */
