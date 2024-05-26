@@ -30,3 +30,18 @@ label {
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
+
+.login {
+  height: 100vh;
+  padding-top: 220px;
+  background: url(/assets/Images/img-background-login.jpg);
+  background-size: cover;
+}
+
+.custom-danger {
+  margin-top: 8px;
+  background: transparent;
+  border: none;
+  color: #ff1d1d;
+  padding: 0;
+}

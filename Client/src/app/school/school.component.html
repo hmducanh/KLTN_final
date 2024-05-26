@@ -1,9 +1,11 @@
 <div class="page">
     <div class="kltn-flex kltn-flex-row kltn-justify-content-between kltn-align-items-center">
         <div class="title">Cơ sở giáo dục</div>
-        <button mat-raised-button color="primary" (click)="vewCSGD()" class="btn-add">
-            Xem điểm
+        <div class="kltn-flex kltn-flex-row">
+          <button mat-raised-button color="basic" (click)="viewReport()" class="btn-view">
+            Xem chi tiết
           </button>
+        </div>
     </div>
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 table-university">
     

@@ -37,14 +37,13 @@ export class ScroingDialogComponent implements OnInit {
   }
 
   saveScore() {
+    const me = this;
     this.scoreService.saveScore(this.data["id"], 0, this.dataScore.toString()).subscribe(res => {
-      console.log(res);
-      close();
+      me.dialogRef.close();
     })
   }
 
   close(): void {
-    console.log(this.dataScore);
     this.dialogRef.close();
   }
 

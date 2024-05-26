@@ -39,5 +39,18 @@ namespace Api.Controllers
                 Success = result
             });
         }
+
+        [HttpGet]
+        [Route("{educationalFacilityID:int}/{criterionMappingID:int}")]
+        [Authorize]
+        public ActionResult GetScoreResultOfSchool(int educationalFacilityID, int criterionMappingID)
+        {
+            List<ScoreResult> score = _bLScore.GetScoreResultOfSchool(educationalFacilityID, criterionMappingID);
+            return Ok(new ServiceResult
+            {
+                Success = true,
+                Data = score
+            });
+        }
     }
 }

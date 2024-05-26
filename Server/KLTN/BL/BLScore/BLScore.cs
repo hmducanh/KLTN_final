@@ -1,5 +1,6 @@
 ﻿using BO;
 using DL;
+using static System.Formats.Asn1.AsnWriter;
 
 namespace BL
 {
@@ -21,5 +22,9 @@ namespace BL
             return _dLScore.AddScoreResult(employeeID, educationalFacilityID, criterionMappingID, score);
         }
 
+        public List<ScoreResult> GetScoreResultOfSchool(int educationalFacilityID, int criterionMappingID)
+        {
+            return _dLScore.GetScoreResultOfSchool(educationalFacilityID, criterionMappingID);
+        }
     }
 }

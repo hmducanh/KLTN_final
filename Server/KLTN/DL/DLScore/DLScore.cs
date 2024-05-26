@@ -1,6 +1,7 @@
 ﻿using BO;
 using DL;
 using MySqlConnector;
+using static System.Formats.Asn1.AsnWriter;
 
 namespace DL
 {
@@ -62,6 +63,13 @@ namespace DL
             string query = $"SELECT * FROM score WHERE EmployeeID = {employeeID} AND EducationalFacilityID = {educationalFacilityID} AND CriterionMappingID = {criterionMappingID}";
             List<Score> scores = GetList<Score>(query);
             return scores.Count == 0 ? null : scores[0];
+        }
+
+        public List<ScoreResult> GetScoreResultOfSchool(int educationalFacilityID, int criterionMappingID)
+        {
+            string query = $"SELECT s.*, e.Fullname FROM score s JOIN employee e ON s.EmployeeID = e.ID where s.EducationalFacilityID = {educationalFacilityID} AND s.CriterionMappingID = {criterionMappingID}";
+            List<ScoreResult> scores = GetList<ScoreResult>(query);
+            return scores.Count == 0 ? null : scores;
         }
     }
 }

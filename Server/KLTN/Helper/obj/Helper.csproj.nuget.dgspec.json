@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\Helper\\Helper.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\Helper\\Helper.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\Helper\\Helper.csproj": {
+    "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\Helper\\Helper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\Helper\\Helper.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\Helper\\Helper.csproj",
         "projectName": "Helper",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\Helper\\Helper.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\Helper\\Helper.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\Helper\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\Helper\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

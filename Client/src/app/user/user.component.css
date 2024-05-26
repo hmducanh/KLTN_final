@@ -11,13 +11,14 @@
 
 .row {
     margin-right: 0px !important;
+    padding: 16px 20px;
 }
 
 .title {
     margin: 16px;
-    font-weight: 500;
-    margin: 16px;
-    font-size: x-large;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 16px;
 }
 
 .col-8 {

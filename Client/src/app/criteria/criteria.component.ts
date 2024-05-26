@@ -64,7 +64,7 @@ export class CriteriaComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    console.log(this.dataSource);
+    // console.log(this.dataSource);
   }
 
   // isAllSelected() {

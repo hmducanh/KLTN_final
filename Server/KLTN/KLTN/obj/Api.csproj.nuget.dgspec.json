@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\KLTN\\Api.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\KLTN\\Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\BL\\BL.csproj": {
+    "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\BL\\BL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\BL\\BL.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\BL\\BL.csproj",
         "projectName": "BL",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\BL\\BL.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\BL\\BL.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\BL\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\BL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,14 +32,14 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\BO\\BO.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\BO\\BO.csproj"
+              "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\BO\\BO.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\BO\\BO.csproj"
               },
-              "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\DL\\DL.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\DL\\DL.csproj"
+              "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\DL\\DL.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\DL\\DL.csproj"
               },
-              "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\Helper\\Helper.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\Helper\\Helper.csproj"
+              "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\Helper\\Helper.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\Helper\\Helper.csproj"
               }
             }
           }
@@ -76,14 +76,14 @@
         }
       }
     },
-    "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\BO\\BO.csproj": {
+    "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\BO\\BO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\BO\\BO.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\BO\\BO.csproj",
         "projectName": "BO",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\BO\\BO.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\BO\\BO.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\BO\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\BO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -141,14 +141,14 @@
         }
       }
     },
-    "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\DL\\DL.csproj": {
+    "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\DL\\DL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\DL\\DL.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\DL\\DL.csproj",
         "projectName": "DL",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\DL\\DL.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\DL\\DL.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\DL\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\DL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -169,8 +169,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\BO\\BO.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\BO\\BO.csproj"
+              "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\BO\\BO.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\BO\\BO.csproj"
               }
             }
           }
@@ -213,14 +213,14 @@
         }
       }
     },
-    "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\Helper\\Helper.csproj": {
+    "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\Helper\\Helper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\Helper\\Helper.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\Helper\\Helper.csproj",
         "projectName": "Helper",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\Helper\\Helper.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\Helper\\Helper.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\Helper\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\Helper\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -278,14 +278,14 @@
         }
       }
     },
-    "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\KLTN\\Api.csproj": {
+    "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\KLTN\\Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\KLTN\\Api.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\KLTN\\Api.csproj",
         "projectName": "Api",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\KLTN\\Api.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\KLTN\\Api.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\KLTN\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\KLTN\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -306,17 +306,17 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\BL\\BL.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\BL\\BL.csproj"
+              "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\BL\\BL.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\BL\\BL.csproj"
               },
-              "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\BO\\BO.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\BO\\BO.csproj"
+              "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\BO\\BO.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\BO\\BO.csproj"
               },
-              "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\DL\\DL.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\DL\\DL.csproj"
+              "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\DL\\DL.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\DL\\DL.csproj"
               },
-              "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\Helper\\Helper.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\KLTN\\Server\\KLTN\\Helper\\Helper.csproj"
+              "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\Helper\\Helper.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\KLTN - final\\Server\\KLTN\\Helper\\Helper.csproj"
               }
             }
           }

@@ -3,6 +3,7 @@ import { AuthService } from '../_services/auth.service';
 import { TokenStorageService } from '../_services/token-storage.service';
 import { EmployeeService } from '../_services/employee.service';
 import { Router } from '@angular/router';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-login',
@@ -27,6 +28,8 @@ export class LoginComponent implements OnInit {
       this.isLoggedIn = true;
       this.roles = this.tokenStorage.getUser().roles;
     }
+
+    $("body").css("height", "fit-content");
   }
 
   onSubmit(): void {

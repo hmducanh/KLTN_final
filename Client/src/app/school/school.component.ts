@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { ChangeDetectorRef } from '@angular/core';
 import { SchoolService } from '../_services/school.service';
 import { SelectionModel } from '@angular/cdk/collections';
+import { MatDialog } from '@angular/material/dialog';
+import { ViewDetailSchoolDialogComponent } from './view-detail-school-dialog/view-detail-school-dialog.component';
 
 export interface PeriodicElement {
   name: string;
@@ -22,11 +24,12 @@ const ELEMENT_DATA: PeriodicElement[] = [
   templateUrl: './school.component.html',
   styleUrls: ['./school.component.css']
 })
+
 export class SchoolComponent {
 
   id = 4;
 
-  constructor(private cdr: ChangeDetectorRef, private schoolService: SchoolService) {}
+  constructor(private cdr: ChangeDetectorRef, private schoolService: SchoolService, private dialog: MatDialog) {}
 
   displayedColumns: string[] = ['select', 'position', 'name', 'code', 'address'];
   dataSource = ELEMENT_DATA;
@@ -49,6 +52,7 @@ export class SchoolComponent {
       if($(".score-a").hasClass("active-module")) {
         $(".score-a").removeClass("active-module");
       }
+      $(".btn-view").hide();
 
       this.schoolService.getSchool().subscribe(data => {
         console.log(data);
@@ -70,7 +74,12 @@ export class SchoolComponent {
     }
 
     viewReport() {
-      console.log(1);
+      this.dialog.open(ViewDetailSchoolDialogComponent, {
+        width: '2000px',
+        height: '800px',
+        data: this.selectedRow
+      });
+      console.log(this.selectedRow);
     }
 
     vewCSGD() {
@@ -85,8 +94,10 @@ export class SchoolComponent {
       this.selection.toggle(row);
       if (this.selection.isSelected(row)) {
         this.selectedRow = row;
+        $(".btn-view").show();
       } else {
         this.selectedRow = null;
+        $(".btn-view").hide();
       }
     }
 }

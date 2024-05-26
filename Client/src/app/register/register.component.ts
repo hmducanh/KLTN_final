@@ -55,7 +55,7 @@ export class RegisterComponent implements OnInit {
     const { username, email, password, role } = this.form;
     this.authService.register(username, email, password, role).subscribe(
       data => {
-        console.log(data);
+        // console.log(data);
 
         if(data["success"]) {
           this.toastService.success({

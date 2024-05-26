@@ -23,6 +23,10 @@ export class ScoreService {
     return this.http.get(AUTH_API + `/${user}/${schoolID}/${typeReport}`);
   }
 
+  getScoreOfSchool(schoolID:number, typeReport:number): Observable<any> {
+    return this.http.get(AUTH_API + `/${schoolID}/${typeReport}`);
+  }
+
   saveScore(EducationalFacilityID:number, CriterionMappingID:number, Result:string): Observable<any> {
     let EmployeeID = this.tokenStorageService.getUser();
     let IsActive = true;

@@ -97,7 +97,7 @@ export class UserComponent {
        !(this.profileForm.controls["email"].touched && this.profileForm.controls["email"].invalid)
     )
     {
-      console.log("gui request");
+      // console.log("gui request");
       this.employeeService.updateEmployee({
         "ID": this.tokenStorage.getUser(),
         "FullName": this.name,

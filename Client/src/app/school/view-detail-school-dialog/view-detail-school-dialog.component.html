@@ -1,1 +1,37 @@
-<p>view-detail-school-dialog works!</p>
+<div class="kltn-flex kltn-flex-column score-dialog">
+    <div class="kltn-flex kltn-flex-row kltn-justify-content-between">
+        <div class="title">Bảng điểm của cho {{data.name}}</div>
+        <div>
+            <button mat-raised-button color="warn" (click)="close()">
+                Đóng
+            </button>
+        </div>
+    </div>
+    <div class="table-container">
+        <table class="table-CSGD">
+            <thead>
+                <tr>
+                    <th style="width: 16%;">Tiêu chuẩn/Tiêu chí</th>
+                    <th style="width: 16%;">Yêu cầu của tiêu chí</th>
+                    <th style="width: 35%;">Mốc chuẩn tham chiếu để đánh giá tiêu chí đạt mức 4</th>
+                    <th style="width: 30%;">Gợi ý nguồn minh chứng</th>
+                    <th *ngFor="let item of schoolResut"> {{item.fullName}} </th>
+                </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of data_CSGD; let i = index" [ngClass]="{'parent': item.isParent, 'child': !item.isParent}" >
+                <td [attr.colspan]="numberColumns" *ngIf="item.isParent">{{ item.data }}</td>
+                <td *ngIf="!item.isParent">{{ item.criteria }}</td>
+                <td *ngIf="!item.isParent">{{ item.requirement }}</td>
+                <td *ngIf="!item.isParent">{{ item.benchmark }}</td>
+                <td *ngIf="!item.isParent">{{ item.evidence }}</td>
+                <td *ngFor="let result of item.listResult;">
+                    <div *ngIf="!item.isParent">
+                        {{ result }}
+                    </div>
+                </td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
